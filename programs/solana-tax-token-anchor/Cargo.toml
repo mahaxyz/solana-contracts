@@ -1,0 +1,23 @@
+[package]
+name = "solana-tax-token-anchor"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_tax_token_anchor"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+# anchor-lang = "0.29.0"
+# anchor-spl = { version = "0.30.0" }
+anchor-lang = { version = "0.30.0", features = ["init-if-needed"] }
+anchor-spl = "0.30.0"
+bytemuck_derive = "=1.8.1"
