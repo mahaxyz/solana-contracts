@@ -6,8 +6,8 @@ skip-lint = false
 
 [programs.localnet]
 clmm-cpi = "CzrAu91uK1YooFQjQtjtvxDZiz9MhqYfq31LgbV5xnPr"
-solana-token-launchpad = "AJBmAnT7A7RBxyK2USQUU1deZj6H3TLYM6RWuG3yaxoJ"
-solana_tax_token_anchor = "Yo1bzVsiuVigxHUmQguSZ83QJ879A4d6cQiGYFeDDMF"
+token-launchpad = "AJBmAnT7A7RBxyK2USQUU1deZj6H3TLYM6RWuG3yaxoJ"
+tax-token = "Yo1bzVsiuVigxHUmQguSZ83QJ879A4d6cQiGYFeDDMF"
 
 [registry]
 url = "https://api.apr.dev"
