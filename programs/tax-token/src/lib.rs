@@ -5,7 +5,7 @@ use instructions::*;
 declare_id!("Yo1bzVsiuVigxHUmQguSZ83QJ879A4d6cQiGYFeDDMF");
 
 #[program]
-pub mod solana_tax_token_anchor {
+pub mod tax_token {
     use super::*;
     pub fn initialize(
         ctx: Context<Initialize>,

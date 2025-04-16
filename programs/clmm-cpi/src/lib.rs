@@ -85,4 +85,30 @@ pub mod clmm_cpi {
             is_base_input,
         )
     }
+    
+    pub fn add_single_side_liquidity<'a, 'b, 'c: 'info, 'info>(
+        ctx: Context<'a, 'b, 'c, 'info, AddSingleSideLiquidity<'info>>,
+        tick_lower_index: i32,
+        tick_upper_index: i32,
+        tick_array_lower_start_index: i32,
+        tick_array_upper_start_index: i32,
+        liquidity: u128,
+        amount_0_max: u64,
+        amount_1_max: u64,
+        with_matedata: bool,
+        base_flag: Option<bool>,
+    ) -> Result<()> {
+        instructions::add_single_side_liquidity(
+            ctx,
+            tick_lower_index,
+            tick_upper_index,
+            tick_array_lower_start_index,
+            tick_array_upper_start_index,
+            liquidity,
+            amount_0_max,
+            amount_1_max,
+            with_matedata,
+            base_flag,
+        )
+    }
 }
