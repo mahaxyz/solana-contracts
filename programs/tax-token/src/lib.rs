@@ -2,10 +2,10 @@ use anchor_lang::prelude::*;
 mod instructions;
 use instructions::*;
 
-declare_id!("2uTRyNTYcwZSWkm9hqxS6gXKdNz67avDRKZzqDesJdeb");
+declare_id!("Yo1bzVsiuVigxHUmQguSZ83QJ879A4d6cQiGYFeDDMF");
 
 #[program]
-pub mod solana_tax_token_anchor {
+pub mod tax_token {
     use super::*;
     pub fn initialize(
         ctx: Context<Initialize>,

@@ -1,18 +1,20 @@
 [toolchain]
 
 [features]
-seeds = false
+resolution = true
 skip-lint = false
 
 [programs.localnet]
-solana_tax_token_anchor = "2uTRyNTYcwZSWkm9hqxS6gXKdNz67avDRKZzqDesJdeb"
+clmm-cpi = "CzrAu91uK1YooFQjQtjtvxDZiz9MhqYfq31LgbV5xnPr"
+token-launchpad = "AJBmAnT7A7RBxyK2USQUU1deZj6H3TLYM6RWuG3yaxoJ"
+tax-token = "Yo1bzVsiuVigxHUmQguSZ83QJ879A4d6cQiGYFeDDMF"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
-wallet = "/Users/riteshnikhoria31/.config/solana/id.json"
+cluster = "localnet"
+wallet = "/Users/oxoxDev/.config/solana/id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
